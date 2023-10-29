@@ -8,19 +8,42 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'mobile-design': '375px',
+        'desktop-design': '1440px',
+      },
+      colors: {
+        primary: {
+          'soft-orange': 'hsl(35, 77%, 62%)',
+          'soft-red': 'hsl(5, 85%, 63%)',
+        },
+        neutral: {
+          'off-white': 'hsl(36, 100%, 99%)',
+          'grayish-blue': 'hsl(233, 8%, 79%)',
+          'dark-grayish-blue': 'hsl(236, 13%, 42%)',
+          'very-dark-blue': 'hsl(240, 100%, 5%)',
+        },
+      },
+      fontSize: {
+        body: '15px',
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
       container: {
         center: true,
         padding: '1rem',
         screens: {
           sm: '100%',
           md: '640px',
-          lg: '1024px',
-          xl: '1024px',
-          '2xl': '1024px',
+          lg: '1000px',
+          xl: '1000px',
+          '2xl': '1000px',
         },
       },
     },
   },
   plugins: [],
 };
+
 export default config;

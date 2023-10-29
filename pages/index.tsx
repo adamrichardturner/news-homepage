@@ -1,6 +1,8 @@
-import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import News from '@/components/News';
+import Posts from '@/components/Posts';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -8,9 +10,11 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between space-y-8 md:space-y-24 ${inter.className}`}
-      ></main>
+      <main className='gridContainer container'>
+        <Hero />
+        <News />
+        <Posts />
+      </main>
     </>
   );
 }
