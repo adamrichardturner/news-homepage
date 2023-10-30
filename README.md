@@ -1,4 +1,4 @@
-# Frontend Mentor - News homepage solution
+# News homepage solution | Next.js, TypeScript and Tailwind CSS
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
 
