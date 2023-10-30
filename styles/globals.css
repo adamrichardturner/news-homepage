@@ -16,6 +16,10 @@
   }
 }
 
+main {
+  padding-bottom: 2rem;
+}
+
 .overlay {
   display: none;
   position: fixed;
@@ -50,7 +54,11 @@
 .heroImage {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 262px;
+}
+
+.heroImage img {
+  object-fit: cover;
 }
 
 @media (max-width: 767px) {
@@ -73,6 +81,22 @@
   grid-gap: 1.5rem;
 }
 
+@media (max-width: 767px) {
+  .gridContainer {
+    grid-template-areas:
+    "hero"
+    "news"
+    "posts";
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+  .gridContainer {
+    grid-gap: 0.75rem;
+  }
+}
+
 .hero {
   grid-area: hero;
 }
@@ -83,4 +107,24 @@
 
 .posts {
   grid-area: posts;
+}
+
+.posts img {
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .posts img {
+    width: 80px !important;
+    object-fit: fill;
+  }
+  .imgContainer {
+    width: 80px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .posts p {
+    max-width: 200px;
+  }
 }
