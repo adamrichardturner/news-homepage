@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://news-homepage-lac-six.vercel.app/](https://news-homepage-lac-six.vercel.app/)
+- Live Site URL: [https://news.adamrichardturner.dev/](https://news.adamrichardturner.dev/)
 
 ## My process
 
